@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lint:sonar": "eslint -f json -o report.json .",
+    "lint:sonar": "eslint -f json -o report.json --ext .js,.vue --rulesdir eslint/rules ./src",
     "sonar:scan": "sonar-scanner",
     "sonar": "run-s lint:sonar sonar:scan"
   },
