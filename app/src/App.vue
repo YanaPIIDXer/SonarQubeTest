@@ -12,6 +12,9 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  mounted: function () {
+    console.log("Test Log")
   }
 }
 </script>
